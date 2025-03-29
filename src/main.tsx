@@ -20,12 +20,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           lightMode: lightTheme({
             borderRadius: 'small',
             overlayBlur: 'small',
-            accentColor: '#351C75',
           }),
           darkMode: darkTheme({
             borderRadius: 'small',
             overlayBlur: 'small',
-            accentColor: '#351C75',
           }),
         }}>
           <App />
