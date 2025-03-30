@@ -1,4 +1,4 @@
-export const myBroadbandCoinAddress = '0xc4Ce6fBCC9785683C1200f7A064281581605775f';
+export const myBroadbandCoinAddress = '0x00929b91F3027C70b1580DbE909B4c70841740eC';
 
 export const myBroadbandCoinAbi = [
   {
@@ -21,6 +21,51 @@ export const myBroadbandCoinAbi = [
     stateMutability: 'view',
     inputs: [{ name: 'user', type: 'address' }],
     outputs: [{ name: '', type: 'uint256' }],
+  },
+  {
+    name: 'approve',
+    type: 'function',
+    stateMutability: 'nonpayable',
+    inputs: [
+      { name: 'spender', type: 'address' },
+      { name: 'amount', type: 'uint256' },
+    ],
+    outputs: [{ name: '', type: 'bool' }],
+  },
+  {
+    name: 'allowance',
+    type: 'function',
+    stateMutability: 'view',
+    inputs: [
+      { name: 'owner', type: 'address', internalType: 'address' },
+      { name: 'spender', type: 'address', internalType: 'address' },
+    ],
+    outputs: [
+      { name: '', type: 'uint256', internalType: 'uint256' },
+    ],
+  },
+  {
+    name: 'transfer',
+    type: 'function',
+    stateMutability: 'nonpayable',
+    inputs: [
+      { name: 'to', type: 'address', internalType: 'address' },
+      { name: 'amount', type: 'uint256', internalType: 'uint256' },
+    ],
+    outputs: [
+      { name: '', type: 'bool', internalType: 'bool' },
+    ],
+  },
+  {
+    name: 'transferFrom',
+    type: 'function',
+    stateMutability: 'nonpayable',
+    inputs: [
+      { name: 'from', type: 'address', internalType: 'address' },
+      { name: 'to', type: 'address', internalType: 'address', },
+      { name: 'amount', type: 'uint256', internalType: 'uint256' },
+    ],
+    outputs: [{ name: '', type: 'bool', internalType: 'bool' }],
   },
   {
     name: 'Transfer',
