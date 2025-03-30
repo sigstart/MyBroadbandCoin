@@ -31,9 +31,7 @@ export function MintForm() {
   };
 
   return (
-    <div className="mint-form">
-      <h2>Mint</h2>
-
+    <section className="mint-form">
       <input
         type="number"
         placeholder="Amount"
@@ -55,6 +53,6 @@ export function MintForm() {
           ✅ Successfully minted {amount} MyBroadbandCoin!
         </p>
       )}
-    </div>
+    </section>
   );
 }

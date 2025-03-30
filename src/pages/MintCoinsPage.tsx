@@ -14,11 +14,10 @@ export default function MintCoinsPage() {
           <p>Please connect your wallet to get started.</p>
         ) : (
           <article>
-            <TokenBalance />
-
             <section className='card'>
-                <MintCount />
-                <MintForm />
+              <TokenBalance />
+              <MintCount />
+              <MintForm />
             </section>
           </article>
         )}
