@@ -1,4 +1,4 @@
-export const myBroadbandCoinAddress = '0xYourContractAddress';
+export const myBroadbandCoinAddress = '0xc4Ce6fBCC9785683C1200f7A064281581605775f';
 
 export const myBroadbandCoinAbi = [
   {

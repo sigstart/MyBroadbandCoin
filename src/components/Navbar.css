@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+  
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar-links a.active {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 2px;
+}
