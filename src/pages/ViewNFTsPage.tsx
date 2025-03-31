@@ -1,3 +1,5 @@
+import { NFTGallery } from '../components/NFTGallery'
+
 export default function ViewNFTsPage() {
-    return <h2>// TODO</h2>;
+    return <NFTGallery />;
 }
