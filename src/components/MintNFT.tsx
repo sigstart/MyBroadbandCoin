@@ -34,6 +34,7 @@ export function MintNFT() {
         address: nftAddress,
         abi: nftAbi,
         functionName: 'mintNFT',
+        gas: 300_000n,
         args: [],
       });
 
