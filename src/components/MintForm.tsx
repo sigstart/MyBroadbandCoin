@@ -16,7 +16,7 @@ export function MintForm() {
     setStatus('Minting...');
     try {
       const parsedAmount = parseUnits(amount, 18);
-      const tx = await writeContractAsync({
+      await writeContractAsync({
         address: myBroadbandCoinAddress,
         abi: myBroadbandCoinAbi,
         functionName: 'mintTokens',
