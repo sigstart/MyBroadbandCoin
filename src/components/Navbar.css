@@ -24,15 +24,3 @@ nav {
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 2px;
 }
-
-@media (max-width: 768px) {
-  .navbar-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    display: none;
-  }
-
-  .navbar-links.open {
-    display: flex;
-  }
-}

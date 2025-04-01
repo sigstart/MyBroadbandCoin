@@ -2,30 +2,25 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { HandCoins, ImagePlus, ScanEye } from 'lucide-react';
 
-type NavbarProps = {
-  isMobileOpen: boolean;
-  setIsMobileOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
-export function Navbar({ isMobileOpen, setIsMobileOpen }: NavbarProps) {
-  const closeMenu = () => setIsMobileOpen(false);
+export function Navbar() {
 
   return (
     <nav className="navbar">
-      <ul className={`navbar-links ${isMobileOpen ? 'open' : ''}`}>
+      <ul className="navbar-links">
         <li>
-          <NavLink to="/mint" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
+          <NavLink to="/mint" className={({ isActive }) => isActive ? 'active' : ''}>
             <HandCoins size={18} style={{ marginRight: 6 }} />
             Mint
           </NavLink>
         </li>
         <li>
-          <NavLink to="/buy" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
+          <NavLink to="/buy" className={({ isActive }) => isActive ? 'active' : ''}>
             <ImagePlus size={18} style={{ marginRight: 6 }} />
             NFTs
           </NavLink>
         </li>
         <li>
-          <NavLink to="/view" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
+          <NavLink to="/view" className={({ isActive }) => isActive ? 'active' : ''}>
             <ScanEye size={18} style={{ marginRight: 6 }} />
             Gallery
           </NavLink>
