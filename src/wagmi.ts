@@ -1,8 +1,8 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
-import { bscTestnet } from 'wagmi/chains';
+import { bsc } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
   appName: 'MyBroadbandCoin',
-  projectId: 'YOUR_PROJECT_ID',
-  chains: [bscTestnet],
+  projectId: '94de01a01de088e8f81c84489afdd0fc',
+  chains: [bsc],
 });
