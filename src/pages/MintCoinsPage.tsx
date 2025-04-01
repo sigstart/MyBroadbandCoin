@@ -8,7 +8,7 @@ export default function MintCoinsPage() {
     return (
         <section>
         {!isConnected ? (
-          <p>Please connect your wallet to get started or click on Gallary to
+          <p>Please connect your wallet to get started or click on Gallery to
             look at the NFTs that have already been minted.</p>
         ) : (
           <article>
