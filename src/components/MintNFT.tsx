@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { myBroadbandCoinAddress, myBroadbandCoinAbi } from '../contracts/MyBroadbandCoin';
 import { nftAddress, nftAbi } from '../contracts/NFT';
 
+import { TokenBalance } from './TokenBalance';
+
 export function MintNFT() {
   const { address, isConnected } = useAccount();
   const [status, setStatus] = useState<'idle' | 'approving' | 'minting' | 'success' | 'error'>('idle');
@@ -48,7 +50,10 @@ export function MintNFT() {
 
   return (
     <div className="mint-form">
-      <p>💸 You need <strong>100</strong> MyBroadbandCoins to mint an NFT.</p>
+      <p>
+        💸 You need <strong>100</strong> MyBroadbandCoins to mint an NFT.
+        <TokenBalance />
+      </p>
       <button
         onClick={handleMint}
         disabled={status === 'approving' || status === 'minting'}

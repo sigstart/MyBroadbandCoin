@@ -68,6 +68,13 @@ export const myBroadbandCoinAbi = [
     outputs: [{ name: '', type: 'bool', internalType: 'bool' }],
   },
   {
+    name: 'EXPIRE_TIME',
+    type: 'function',
+    stateMutability: 'view',
+    inputs: [],
+    outputs: [{ name: '', type: 'uint256' }],
+  },
+  {
     name: 'Transfer',
     type: 'event',
     inputs: [
