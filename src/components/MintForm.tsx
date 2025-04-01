@@ -32,6 +32,7 @@ export function MintForm() {
 
   return (
     <section className="mint-form">
+      <p>💡 Tip: You can mint up to <strong>10,000</strong> at a time.</p>
       <input
         type="number"
         placeholder="Amount"

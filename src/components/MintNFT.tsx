@@ -48,6 +48,7 @@ export function MintNFT() {
 
   return (
     <div className="mint-form">
+      <p>💸 You need <strong>100</strong> MyBroadbandCoins to mint an NFT.</p>
       <button
         onClick={handleMint}
         disabled={status === 'approving' || status === 'minting'}
