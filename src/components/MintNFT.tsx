@@ -63,8 +63,8 @@ export function MintNFT() {
         Note: Clicking mint will trigger two transactions: A spending approval
         and the actual NFT mint. If you don't close the approval confirmation
         in Metamask, you may incorrectly receive an error message that your
-        transaction has been reverted. However, clicking in Metamask will 
-        confirm that your mint was successful.
+        transaction has been reverted. However, looking at the transaction 
+        record in Metamask will confirm that your mint was successful.
       </p>
 
       {status === 'success' && (
