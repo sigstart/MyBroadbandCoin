@@ -7,7 +7,8 @@ export default function MintNFTPage() {
         return (
             <section>
             {!isConnected ? (
-              <p>Please connect your wallet to get started.</p>
+              <p>Please connect your wallet to get started or click on Gallary to
+            look at the NFTs that have already been minted.</p>
             ) : (
               <article>
                 <section className='card'>
